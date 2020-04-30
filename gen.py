@@ -123,7 +123,7 @@ def generate_route_files(spec, file_header_template, output_path, routes):
             file.write(endpoint + '\n')
 
             path = path['path']
-            print(f'Generated endpoint for {path}...')
+            # print(f'Generated endpoint for {path}...')
 
         file.write('}')
         file.close()
@@ -160,6 +160,9 @@ def main():
     copy_file(spec, file_header_template, output_path, 'Endpoint')
 
     generate_route_files(spec, file_header_template, output_path, routes)
+    
+    new_path = output_path.replace('./', '')
+    print(f'Wrapper can be found in {new_path}')
 
 # https://stackoverflow.com/a/19053800
 def to_camel_case(snake_str):
