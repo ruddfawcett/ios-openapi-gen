@@ -1,0 +1,3 @@
+    static func <# Readable Name #>({parameters}) -> Endpoint<<# Model Type/Void #>> {{
+        return Endpoint(method: .{method}, path: "{path}")
+    }}

@@ -1,0 +1,4 @@
+spec: petsore.json
+project: Example
+organization: organization
+dependencies: Alamofire

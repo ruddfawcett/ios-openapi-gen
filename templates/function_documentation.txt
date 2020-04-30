@@ -1,0 +1,4 @@
+/// {description}
+///
+/// - Parameters:
+///     - z: The *z* component of the vector.
